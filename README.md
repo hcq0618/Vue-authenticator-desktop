@@ -2,7 +2,7 @@
 
 > Two-factor authenticator(2FA) desktop client
 
-## Setup
+## Build Setup
 
 ``` bash
 # install dependencies
