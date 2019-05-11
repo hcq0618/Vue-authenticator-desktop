@@ -67,3 +67,4 @@ build/*
 !build/icons
 thumbs.db
 !.gitkeep
+package-lock.json
