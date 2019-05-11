@@ -2,7 +2,7 @@
 
 > Two-factor authenticator(2FA) desktop client
 
-## Build Setup
+## Setup
 
 ``` bash
 # install dependencies
@@ -19,37 +19,63 @@ npm run build
 npm run lint
 ```
 
-## Framework & Library
-**Electron**: runtime - [https://electronjs.org/](https://electronjs.org/)
+### Framework & Library Setup
+**Electron**: desktop runtime - [https://electronjs.org/](https://electronjs.org/)
 
 **Electron-vue**: project - [https://github.com/SimulatedGREG/electron-vue](https://github.com/SimulatedGREG/electron-vue)
 
 **Electron packager**: package -  [https://github.com/electron-userland/electron-packager](http://https://github.com/electron-userland/electron-packager)
 
-`npm install electron-packager --save-dev`
+``` bash
+npm install electron-packager --save-dev
+```
 
 **Element UI**: UI Components -
 [https://element.eleme.cn](https://element.eleme.cn)
 
-`npm i element-ui -S`
+``` bash
+npm i element-ui -S
 
-`npm install babel-plugin-component -D`
+npm install babel-plugin-component -D
+```
 
 **Speakeasy**: TOTP/HOTP - [https://github.com/speakeasyjs/speakeasy](http://https://github.com/speakeasyjs/speakeasy)
 
-`npm install --save speakeasy`
+``` bash
+npm install --save speakeasy
 
-`npm install --save qrcode`
+npm install --save qrcode
+```
 
 **QRCode decoder**: QRCode decode - [https://github.com/yugasun/qrcode-decoder](http://https://github.com/yugasun/qrcode-decoder)
 
-`npm install --save qrcode-decoder`
+``` bash
+npm install --save qrcode-decoder
+```
 
 **Clipboard**: clipboard - [https://github.com/zenorocha/clipboard.js/](http://https://github.com/zenorocha/clipboard.js/)
 
-`npm install clipboard --save`
+``` bash
+npm install clipboard --save
+```
 
-## Desktop Client Download
+## Package Desktop Client
+``` bash
+# build for macOS
+npm run build:mas
+
+# build for windows
+npm run build:win32
+
+# build for linux
+npm run build:linux
+
+# build for darwin
+npm run build:darwin
+
+# build clean
+npm run build:clean
+```
 
 ## Features
 - Select a QRCode file to add an account
