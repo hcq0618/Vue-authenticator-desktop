@@ -89,6 +89,11 @@ npm run build:clean
 
 ![avatar](screenshot.jpg)
 
+## TODO
+- Enter a main password when screen locked
+- Cloud backup
+- Export accounts
+
 ## License
 MIT License
 
