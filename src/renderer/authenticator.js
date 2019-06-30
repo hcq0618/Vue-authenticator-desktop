@@ -202,20 +202,9 @@ export function updateAccounts(accounts) {
 }
 
 export function copy(token) {
-    var Clipboard = require('clipboard')
-    var clipboard = new Clipboard('.copy', {
-        text: function (el) {
-            return token
-        }
-    })
-    clipboard.on('success', e => {
-        showSuccessMessage('Copy success')
-        clipboard.destroy()
-    })
-    clipboard.on('error', e => {
-        showErrorMessage('Copy failure')
-        clipboard.destroy()
-    })
+    var clipboard = require('electron').clipboard
+    clipboard.writeText(token)
+    showSuccessMessage('Copy success')
 }
 
 function qrCode(account, callback) {

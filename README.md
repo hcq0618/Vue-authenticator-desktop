@@ -53,12 +53,6 @@ npm install --save qrcode
 npm install --save qrcode-decoder
 ```
 
-**Clipboard**: clipboard - [https://github.com/zenorocha/clipboard.js/](http://https://github.com/zenorocha/clipboard.js/)
-
-``` bash
-npm install clipboard --save
-```
-
 ## Package Desktop Client
 ``` bash
 # build for macOS
